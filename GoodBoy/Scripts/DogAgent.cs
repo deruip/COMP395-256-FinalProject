@@ -37,13 +37,13 @@ public class DogAgent : Agent
     public override void CollectObservations()
     {
 
-        // Add raycast perception observations for stumps and walls
+        // Add raycast perception observations for treat and walls
         float rayDistance = 20f;
         float[] rayAngles = { 90f };
         string[] detectableObjects = { "treat", "wall" };
         AddVectorObs(rayPerception.Perceive(rayDistance, rayAngles, detectableObjects, 0f, 0f));
 
-        // Sniff for truffles
+        // look for treats
         AddVectorObs(GetNostrilStereo());
 
         // Add velocity observation

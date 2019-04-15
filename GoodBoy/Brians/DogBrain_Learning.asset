@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_GeneratorAsset: {fileID: 0}
-  m_Script: {fileID: 11500000, guid: 41e9bda8f3cf1492fa74926a530f6f70, type: 3}
-  m_Name: DogBrain_Player
+  m_Script: {fileID: 11500000, guid: 8b23992c8eb17439887f5e944bf04a40, type: 3}
+  m_Name: DogBrain_Learning
   m_EditorClassIdentifier: 
   brainParameters:
-    vectorObservationSize: 9
+    vectorObservationSize: 0
     numStackedVectorObservations: 1
     vectorActionSize: 0300000003000000
     cameraResolutions: []
@@ -22,18 +22,5 @@ MonoBehaviour:
     - Move
     - Turn
     vectorActionSpaceType: 0
-  keyContinuousPlayerActions: []
-  axisContinuousPlayerActions: []
-  discretePlayerActions:
-  - key: 119
-    branchIndex: 0
-    value: 1
-  - key: 115
-    branchIndex: 0
-    value: 2
-  - key: 97
-    branchIndex: 1
-    value: 1
-  - key: 100
-    branchIndex: 1
-    value: 2
+  model: {fileID: 0}
+  inferenceDevice: 0
